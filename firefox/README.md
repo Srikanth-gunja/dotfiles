@@ -1,0 +1,4 @@
+- open firefox
+- First Enable `toolkit.legacyUserProfileCustomizations.stylesheets` to `true` in `about:config`
+- `<profile folder>/chrome/userChrome.css` Ex:`.config/mozilla/firefox/yhqen.default-release/userChrome.css` paste code in this
+- restart it 
