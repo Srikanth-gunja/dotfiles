@@ -1,0 +1,174 @@
+# Helix port of vis theme `nvim` (ashen)
+# Palette (all hex from ~/.config/vis/themes/nvim.lua):
+#   bg #101315   text #B4B4B4   bright #E5E5E5   comment #737373
+#   orange #C4693D   red #DF6464   dark red #B14242   error red #C53030
+#   teal #4A8B8B   yellow #E5A72A   grey #949494   operator #E0E2EA
+
+# ========== Keywords (bold, every language, old + new scope names) ==========
+"keyword"                     = { fg = "#E5E5E5", modifiers = ["bold"] }
+"keyword.control"             = { fg = "#E5E5E5", modifiers = ["bold"] }
+"keyword.control.conditional" = { fg = "#E5E5E5", modifiers = ["bold"] }
+"keyword.control.repeat"      = { fg = "#E5E5E5", modifiers = ["bold"] }
+"keyword.control.import"      = { fg = "#E5E5E5", modifiers = ["bold"] }
+"keyword.control.return"      = { fg = "#E5E5E5", modifiers = ["bold"] }
+"keyword.control.exception"   = { fg = "#E5E5E5", modifiers = ["bold"] }
+"keyword.operator"            = { fg = "#E5E5E5", modifiers = ["bold"] }
+"keyword.function"            = { fg = "#E5E5E5", modifiers = ["bold"] }
+"keyword.storage"             = { fg = "#E5E5E5", modifiers = ["bold"] }
+"keyword.storage.type"        = { fg = "#E5E5E5", modifiers = ["bold"] }
+"keyword.storage.modifier"    = { fg = "#E5E5E5", modifiers = ["bold"] }
+"keyword.type"                = { fg = "#E5E5E5", modifiers = ["bold"] }
+"keyword.modifier"            = { fg = "#E5E5E5", modifiers = ["bold"] }
+"keyword.coroutine"           = { fg = "#E5E5E5", modifiers = ["bold"] }
+"keyword.special"             = { fg = "#E5E5E5", modifiers = ["bold"] }
+"keyword.module"              = { fg = "#E5E5E5", modifiers = ["bold"] }
+"keyword.directive"           = { fg = "#B14242", modifiers = ["bold"] }
+
+# ========== Functions ==========
+"function"         = { fg = "#E5E5E5" }
+"function.builtin" = { fg = "#E5E5E5" }
+"function.method"  = { fg = "#E5E5E5" }
+"function.special" = { fg = "#E5E5E5" }
+"function.macro"   = { fg = "#B14242", modifiers = ["bold"] }
+
+# ========== Types ==========
+# builtin types (uint16, int32, string) = bold orange
+# user types (myEnigine, owner) = white
+"type"              = { fg = "#E5E5E5" }
+"type.builtin"      = { fg = "#C4693D", modifiers = ["bold"] }
+"type.parameter"    = { fg = "#E5E5E5" }
+"type.enum"         = { fg = "#E5E5E5" }
+"type.enum.variant" = { fg = "#E5E5E5" }
+"constructor"       = { fg = "#E5E5E5" }
+
+# ========== Constants / numbers ==========
+"constant"                         = { fg = "#C4693D", modifiers = ["bold"] }
+"constant.builtin"                 = { fg = "#4A8B8B", modifiers = ["bold"] }
+"constant.builtin.boolean"         = { fg = "#4A8B8B", modifiers = ["bold"] }
+"constant.numeric"                 = { fg = "#C4693D" }
+"constant.numeric.integer"         = { fg = "#C4693D" }
+"constant.numeric.float"           = { fg = "#C4693D" }
+"constant.character"               = { fg = "#DF6464" }
+"constant.character.escape"        = { fg = "#B14242", modifiers = ["bold"] }
+
+# ========== Strings (red) ==========
+"string"              = { fg = "#DF6464" }
+"string.regexp"       = { fg = "#DF6464" }
+"string.special"      = { fg = "#DF6464" }
+"string.special.path" = { fg = "#DF6464" }
+"string.special.url"  = { fg = "#DF6464" }
+"string.special.symbol" = { fg = "#DF6464" }
+
+# ========== Comments ==========
+"comment"                     = { fg = "#737373" }
+"comment.line"                = { fg = "#737373" }
+"comment.block"               = { fg = "#737373" }
+"comment.block.documentation" = { fg = "#737373" }
+"comment.unused"              = { fg = "#737373" }
+
+# ========== Variables / identifiers (vis STYLE_IDENTIFIER = #E5E5E5) ==========
+"variable"                = { fg = "#E5E5E5" }
+"variable.parameter"      = { fg = "#E5E5E5" }
+"variable.builtin"        = { fg = "#E5E5E5" }
+"variable.other"          = { fg = "#E5E5E5" }
+"variable.other.member"   = { fg = "#E5E5E5" }
+
+# ========== Misc syntax ==========
+"label"       = { fg = "#E5E5E5" }
+"namespace"   = { fg = "#E5E5E5" }
+"module"      = { fg = "#E5E5E5" }
+"attribute"   = { fg = "#4A8B8B", modifiers = ["bold"] }
+"tag"         = { fg = "#C53030", modifiers = ["bold"] }
+"special"     = { fg = "#949494" }
+"operator"    = { fg = "#E0E2EA" }
+
+"punctuation"           = { fg = "#B4B4B4" }
+"punctuation.delimiter" = { fg = "#B4B4B4" }
+"punctuation.bracket"   = { fg = "#B4B4B4" }
+"punctuation.special"   = { fg = "#949494" }
+
+# ========== Markup ==========
+"markup.heading"   = { fg = "#E5E5E5", modifiers = ["bold"] }
+"markup.heading.1" = { fg = "#E5E5E5", modifiers = ["bold"] }
+"markup.heading.2" = { fg = "#E5E5E5", modifiers = ["bold"] }
+"markup.heading.3" = { fg = "#E5E5E5", modifiers = ["bold"] }
+"markup.heading.4" = { fg = "#E5E5E5", modifiers = ["bold"] }
+"markup.heading.5" = { fg = "#E5E5E5", modifiers = ["bold"] }
+"markup.heading.6" = { fg = "#E5E5E5", modifiers = ["bold"] }
+"markup.list"           = { fg = "#949494" }
+"markup.list.unchecked" = { fg = "#535353" }
+"markup.list.checked"   = { fg = "#4A8B8B" }
+"markup.bold"          = { modifiers = ["bold"] }
+"markup.italic"        = { modifiers = ["italic"] }
+"markup.strikethrough" = { modifiers = ["crossed_out"] }
+# red, no underline: makes gopls import links ("fmt") look like vis strings
+"markup.link.url"   = { fg = "#DF6464" }
+"markup.link.text"  = { fg = "#4A8B8B" }
+"markup.link.label" = { fg = "#4A8B8B" }
+"markup.raw"        = { fg = "#DF6464" }
+"markup.quote"      = { fg = "#949494" }
+
+# ========== Diff ==========
+"diff.plus"  = { fg = "#4A8B8B" }
+"diff.minus" = { fg = "#C53030" }
+"diff.delta" = { fg = "#E5A72A" }
+
+# ========== UI ==========
+"ui.background"           = { bg = "#101315" }
+"ui.background.separator" = { fg = "#535353", bg = "#101315" }
+"ui.text"                 = { fg = "#B4B4B4" }
+"ui.text.focus"           = { fg = "#B4B4B4", bg = "#212121", modifiers = ["bold"] }
+"ui.text.inactive"        = { fg = "#737373" }
+"ui.text.directory"       = { fg = "#4A8B8B", modifiers = ["bold"] }
+
+"ui.linenr"          = { fg = "#323232", bg = "#101315" }
+"ui.linenr.selected" = { fg = "#737373", bg = "#101315", modifiers = ["bold"] }
+
+"ui.statusline"          = { fg = "#949494", bg = "#323232" }
+"ui.statusline.inactive" = { fg = "#949494", bg = "#323232" }
+"ui.statusline.normal"   = { fg = "#E5E5E5", bg = "#535353", modifiers = ["bold"] }
+"ui.statusline.insert"   = { fg = "#101315", bg = "#E5E5E5", modifiers = ["bold"] }
+"ui.statusline.select"   = { fg = "#101315", bg = "#4A8B8B", modifiers = ["bold"] }
+
+"ui.popup"  = { fg = "#B4B4B4", bg = "#101315" }
+"ui.window" = { fg = "#535353" }
+"ui.help"   = { fg = "#B4B4B4", bg = "#101315" }
+
+"ui.bufferline"        = { fg = "#737373", bg = "#101315" }
+"ui.bufferline.active" = { fg = "#E5E5E5", bg = "#323232", modifiers = ["bold"] }
+
+"ui.virtual"              = { fg = "#737373" }
+"ui.virtual.ruler"        = { bg = "#212121" }
+"ui.virtual.indent-guide" = { fg = "#323232" }
+"ui.virtual.inlay-hint"   = { fg = "#737373" }
+"ui.virtual.jump-label"   = { fg = "#C53030", modifiers = ["bold"] }
+"ui.virtual.whitespace"   = { fg = "#535353" }
+
+"ui.selection" = { bg = "#323232" }
+
+"ui.cursor"                = { fg = "#101315", bg = "#737373" }
+"ui.cursor.primary"        = { fg = "#101315", bg = "#E5E5E5" }
+"ui.cursor.primary.normal" = { fg = "#101315", bg = "#737373" }
+"ui.cursor.primary.insert" = { fg = "#101315", bg = "#E5E5E5" }
+"ui.cursor.primary.select" = { fg = "#101315", bg = "#4A8B8B" }
+"ui.cursor.match"          = { fg = "#E5A72A", modifiers = ["bold"] }
+
+"ui.cursorline.primary" = { bg = "#212121" }
+"ui.highlight"          = { bg = "#212121", modifiers = ["bold"] }
+
+"ui.menu"          = { fg = "#B4B4B4", bg = "#101315" }
+"ui.menu.selected" = { fg = "#E5E5E5", bg = "#535353", modifiers = ["bold"] }
+
+# ========== Diagnostics ==========
+"diagnostic.error"       = { underline = { color = "#C53030", style = "curl" } }
+"diagnostic.warning"     = { underline = { color = "#E5A72A", style = "curl" } }
+"diagnostic.info"        = { underline = { color = "#4A8B8B", style = "curl" } }
+"diagnostic.hint"        = { underline = { color = "#949494", style = "curl" } }
+# vis shows `owner` in engine.owner.name at normal brightness; use {} to match
+"diagnostic.unnecessary" = {}
+"diagnostic.deprecated"  = { modifiers = ["crossed_out"] }
+
+error   = "#C53030"
+warning = "#E5A72A"
+info    = "#4A8B8B"
+hint    = "#949494"

@@ -1,0 +1,37 @@
+
+theme = "solitude_mod" 
+[editor]
+line-number = "absolute"
+
+auto-completion = true
+auto-info = true
+bufferline = "multiple"
+completion-trigger-len = 1
+end-of-line-diagnostics = "disable"
+# default-yank-register = "+"
+[editor.inline-diagnostics]
+cursor-line = "warning"
+# other-lines = "disable"
+
+[editor.gutters]
+layout = ["diff", "diagnostics", "line-numbers", "spacer"]
+
+[editor.lsp]
+enable = true
+display-messages = true
+auto-signature-help = true
+display-inlay-hints = true
+
+[keys.insert]
+C-s = [":w", "normal_mode"]
+
+[keys.normal]
+C-s = ":w"
+esc = ["collapse_selection", "keep_primary_selection"]
+[editor.smart-tab]
+enable = false
+[editor.cursor-shape]
+# insert = "bar"      # Changes to a vertical line in insert mode
+insert = "block"
+normal = "block"    # Standard block cursor in normal mode
+select = "underline"# Underline in selection mode

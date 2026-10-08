@@ -1,0 +1,12 @@
+inherits = "rose_pine_moon"
+
+# Match Foot's black background. Foot applies its configured 92% opacity to
+# cells using this color while Rosé Pine continues to provide syntax colors.
+"ui.background" = { bg = "terminal_bg" }
+"ui.background.separator" = { bg = "terminal_bg" }
+"ui.gutter" = { bg = "terminal_bg" }
+"ui.gutter.selected" = { bg = "terminal_bg" }
+"ui.bufferline" = { fg = "muted", bg = "terminal_bg" }
+
+[palette]
+terminal_bg = "#000000"

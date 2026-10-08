@@ -1,0 +1,25 @@
+
+inherits = "doom-one"
+
+# ── Bufferline ───────────────────────────────────────────
+# Active (current) buffer tab — bright & distinct
+"ui.bufferline.active" = { fg = "#282c34", bg = "#51afef", modifiers = ["bold"] }
+# Inactive buffer tabs — muted
+"ui.bufferline"        = { fg = "#5b6268", bg = "#21242b" }
+
+# ── Cursor shapes & colors per mode ──────────────────────
+# Normal mode  — block, amber
+"ui.cursor.normal"     = { bg = "#c6a633", fg = "#282c34" }
+# Insert mode  — bar, green
+"ui.cursor.insert"     = { bg = "#98be65", fg = "#282c34" }
+# Select mode  — underline, magenta
+"ui.cursor.select"     = { bg = "#c678dd", fg = "#282c34" }
+
+# Primary cursor (the one with focus) — same per mode but explicit
+"ui.cursor.primary.normal" = { bg = "#c6a633", fg = "#282c34", modifiers = ["bold"] }
+"ui.cursor.primary.insert" = { bg = "#98be65", fg = "#282c34", modifiers = ["bold"] }
+"ui.cursor.primary.select" = { bg = "#c678dd", fg = "#282c34", modifiers = ["bold"] }
+
+# Cursor line highlight (the row the cursor is on)
+"ui.cursorline.primary"    = { bg = "#2d3040" }
+"ui.virtual.jump-label" = { fg = "red",modifiers=["bold"] }
