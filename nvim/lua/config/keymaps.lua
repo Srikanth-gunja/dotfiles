@@ -29,3 +29,7 @@ vim.keymap.set("n", "x", "V", { desc = "Select line (x again extends down)" })
 vim.keymap.set("n", "X", "V", { desc = "Select line (X again extends up)" })
 vim.keymap.set("x", "x", "j", { desc = "Extend line selection downward" })
 vim.keymap.set("x", "X", "k", { desc = "Extend line selection upward" })
+
+-- Helix-style line ends: gh = start of line, gl = end of line
+vim.keymap.set({ "n", "x", "o" }, "gh", "^", { desc = "Start of line" })
+vim.keymap.set({ "n", "x", "o" }, "gl", "$", { desc = "End of line" })
